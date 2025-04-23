@@ -1,13 +1,14 @@
 body {
     margin: 0;
     line-height: 1.5;
-    background-color: antiquewhite;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
-    font-size: 16px; /* Base font size */
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .cv {
@@ -26,10 +27,14 @@ h1 {
     /* margin: trên dưới trái phải
     trên 5
     dưới 0 */
+    color: #2c3e50;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 2.2em;
 }
 
 .cv{
-    width: 35cm;
+    width: 40cm;
     padding: 2cm;
     background-color: rgb(255, 255, 255);
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -39,15 +44,24 @@ h1 {
 .contact {
     text-align: center;
     margin-bottom: 20px;
+    color: #34495e;
 }
 .contact p {
     margin: 2px 0; 
+    transition: all 0.3s ease;
+}
+.contact p:hover {
+    transform: translateY(-2px);
+    color: #3498db;
 }
 .section-title {
     border-bottom: 2px solid #000000;
     padding-bottom: 5px;
     margin-top: 30px;
     font-weight: bold;
+    color: #2c3e50;
+    padding-left: 10px;
+    background: linear-gradient(to right, #f5f7fa 0%, #ffffff 100%);
 }
 .ul {
     margin: 10px 0 10px 20px; 
@@ -94,6 +108,60 @@ table, tr, td{
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid #000000;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.profile-image img:hover {
+    transform: scale(1.05);
+}
+
+table {
+    width: 100%;
+    margin: 15px 0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+tr:hover {
+    background-color: #e8f4f8;
+}
+
+td {
+    transition: all 0.3s ease;
+}
+
+.btn{
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.btn:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Add smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Add selection color */
+::selection {
+    background: #3498db;
+    color: white;
 }
 
 /* Media queries for responsiveness */
