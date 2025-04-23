@@ -7,6 +7,17 @@ body {
     justify-content: center;
     align-items: center;
     padding: 20px;
+    font-size: 16px; /* Base font size */
+}
+
+.cv {
+    width: 21cm;
+    max-width: 100%; /* Ensure CV doesn't overflow on small screens */
+    padding: 2cm;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 0;
+    box-sizing: border-box; /* Include padding in width calculation */
 }
 
 h1 {
@@ -87,15 +98,36 @@ table, tr, td{
 
 /* Media queries for responsiveness */
 @media screen and (max-width: 1200px) {
+    body {
+        font-size: 15px;
+    }
+    
     .cv {
         width: 90%;
         padding: 1.5cm;
     }
 }
 
+@media screen and (max-width: 992px) {
+    body {
+        font-size: 14px;
+    }
+    
+    .cv {
+        width: 95%;
+        padding: 1.2cm;
+    }
+    
+    .profile-image img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     body {
         padding: 10px;
+        font-size: 14px;
     }
     
     .cv {
@@ -112,9 +144,18 @@ table, tr, td{
         padding-left: 15px;
         padding-right: 20px;
     }
+    
+    .section-title {
+        margin-top: 20px;
+    }
 }
 
 @media screen and (max-width: 480px) {
+    body {
+        padding: 5px;
+        font-size: 13px;
+    }
+    
     .cv {
         padding: 0.8cm;
     }
@@ -125,8 +166,54 @@ table, tr, td{
     }
     
     table, tr, td {
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 8px;
+        padding-right: 8px;
         font-size: 0.9em;
+    }
+    
+    h1 {
+        font-size: 1.5em;
+    }
+    
+    .btn {
+        font-size: 1.5em;
+    }
+}
+
+/* Add support for very small devices */
+@media screen and (max-width: 320px) {
+    body {
+        font-size: 12px;
+    }
+    
+    .cv {
+        padding: 0.5cm;
+    }
+    
+    .profile-image img {
+        width: 120px;
+        height: 120px;
+    }
+    
+    table, tr, td {
+        padding: 5px;
+    }
+}
+
+/* Print media query for better PDF export */
+@media print {
+    body {
+        background: none;
+        padding: 0;
+    }
+    
+    .cv {
+        width: 21cm;
+        box-shadow: none;
+        padding: 1cm;
+    }
+    
+    .btn {
+        display: none;
     }
 }
