@@ -63,7 +63,15 @@ h1 {
     padding-left: 10px;
     background: linear-gradient(to right, #f5f7fa 0%, #ffffff 100%);
 }
+
+.career-objective {
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
 .ul {
+    text-align: justify;
     margin: 10px 0 10px 20px; 
     /* margin: trên dưới trái phải */
 }
@@ -82,6 +90,7 @@ h1 {
 }
 
 li{
+    text-align: justify;
     padding: 0 0 0 10px;
 }
 table, tr, td{
