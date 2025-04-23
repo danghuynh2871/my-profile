@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    line-height: 1.5;
+    background-color: antiquewhite;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin: 5px 0;
+    /* margin: trên dưới trái phải
+    trên 5
+    dưới 0 */
+}
+
+.cv{
+    width: 21cm;
+    padding: 2cm;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 0;
+}
+
+.contact {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.contact p {
+    margin: 2px 0; 
+}
+.section-title {
+    border-bottom: 2px solid #000000;
+    padding-bottom: 5px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+.ul {
+    margin: 10px 0 10px 20px; 
+    /* margin: trên dưới trái phải */
+}
+
+.td-customer{
+    font-weight: bold;
+}
+.td-details{
+    font-weight: bold;
+}
+.td-desription{
+    font-weight: bold;
+}
+.td-project{
+    font-weight: bold;
+}
+
+li{
+    padding: 0 0 0 10px;
+}
+table, tr, td{
+    border: 1px solid rgb(0, 0, 0);
+    border-collapse: collapse; 
+    padding: 0 20px 0 0;
+    /* đường viền đơn màu đen */
+    padding-left: 30px;
+    padding-right: 40px;
+    
+}
+.btn{
+    font-size: 2em;
+}
+
+.profile-image {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-image img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #000000;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 1200px) {
+    .cv {
+        width: 90%;
+        padding: 1.5cm;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    .cv {
+        width: 100%;
+        padding: 1cm;
+    }
+    
+    .profile-image img {
+        width: 180px;
+        height: 180px;
+    }
+    
+    table, tr, td {
+        padding-left: 15px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .cv {
+        padding: 0.8cm;
+    }
+    
+    .profile-image img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    table, tr, td {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 0.9em;
+    }
+}
