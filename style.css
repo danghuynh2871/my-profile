@@ -13,12 +13,12 @@ body {
 
 .cv {
     width: 21cm;
-    max-width: 100%; /* Ensure CV doesn't overflow on small screens */
+    max-width: 100%;
     padding: 2cm;
     background-color: rgb(255, 255, 255);
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     margin: 0;
-    box-sizing: border-box; /* Include padding in width calculation */
+    box-sizing: border-box;
 }
 
 h1 {
